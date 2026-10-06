@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beamforge
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: beamforge
+  template:
+    metadata:
+      labels:
+        app: beamforge
+    spec:
+      containers:
+        - name: beamforge
+          image: beamforge:1.0.0
+          ports:
+            - containerPort: 8899
+          command: ["beamforge", "serve", "--port", "8899"]

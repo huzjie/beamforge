@@ -1,0 +1,7 @@
+# Frontier-scale MoE (sparse accounting only, no real allocation)
+moe:
+  n_experts: 512
+  top_k: 2
+  dim: 8192
+  hidden: 8192
+  capacity_factor: 1.25

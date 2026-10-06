@@ -1,0 +1,11 @@
+# Pretrain recipe (mock backend, small dims)
+backend:
+  name: mock
+moe:
+  n_experts: 32
+  top_k: 2
+  dim: 64
+  hidden: 64
+train:
+  epochs: 5
+  lr: 0.1

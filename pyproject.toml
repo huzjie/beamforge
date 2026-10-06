@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beamforge"
+version = "1.0.0"
+description = "Sparse frontier-model training factory (Reflection Beam direction): fault-tolerant elastic MoE training + sandbox factory + midtraining"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [{name = "beamforge"}]
+
+[project.optional-dependencies]
+vllm = ["vllm"]
+transformers = ["transformers"]
+openai = ["openai"]
+
+[tool.setuptools.packages.find]
+include = ["beamforge*"]

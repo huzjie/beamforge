@@ -1,0 +1,5 @@
+# beamforge core is zero-dependency; optional backends below
+# vllm
+# transformers
+# openai
+# pyyaml

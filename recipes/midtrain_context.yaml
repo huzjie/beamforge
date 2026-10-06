@@ -1,0 +1,4 @@
+# Midtrain context-extension recipe
+midtrain:
+  base_seq_len: 2048
+  target_seq_len: 1048576

@@ -1,0 +1,8 @@
+# RL sandbox-factory recipe
+sandbox:
+  n_sandboxes: 256
+  kinds:
+    - code
+    - web
+    - agent
+  max_concurrency: 64

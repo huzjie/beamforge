@@ -1,0 +1,6 @@
+# Fault-injection drill: 71 faults, measure MTTR
+fault:
+  inject: true
+  n_faults: 71
+  mttr_target_minutes: 8.0
+  elastic: true
